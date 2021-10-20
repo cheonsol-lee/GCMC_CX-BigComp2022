@@ -1,4 +1,4 @@
-# Multi-relational GCMC 1.0														
+# Multi-relational Stacking Ensemble Recommender System using Cinematic Experience										
 	Last modified in 2021.10.20
 	
 ### CREDIT
