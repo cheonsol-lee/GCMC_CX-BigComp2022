@@ -1,12 +1,12 @@
 # Multi-relational GCMC 1.0														
-	Last modified in 2020.11
+	Last modified in 2021.10.20
 	
 ### CREDIT
 	Cheonsol Lee
 	Donghee Han
 
 ### INSTALLATION
-	no installation is required to run this software since it will never be released as it is. 
+	test
 
 ### DEPENDENCIES
 ##### Graph Library
