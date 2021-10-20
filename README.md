@@ -10,7 +10,6 @@
 
 ### DEPENDENCIES
 ##### Graph Library
-	Web) vis.zip, http://visjs.org/index.html#download_install
-	Local) JPathfinder.jar, http://interlinkinc.net/
+	test
 
 
