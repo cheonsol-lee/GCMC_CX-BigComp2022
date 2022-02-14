@@ -73,7 +73,8 @@ def evaluate(args, net, dataset, segment='valid'):
                          nd_possible_rating_values.view(1, -1)).sum(dim=1)
     rmse = ((real_pred_ratings - rating_values) ** 2.).mean().item()
     rmse = np.sqrt(rmse)
-    return rmse, real_pred_ratings
+#     mae = np.mean(np.abs(real_pred_ratings.cpu() - rating_values.cpu()))
+    return rmse, real_pred_ratings, rating_values
 
 
 def train(args, dataset):
@@ -173,7 +174,7 @@ def train(args, dataset):
             count_num = 0
 
         if iter_idx % args.train_valid_interval == 0:
-            valid_rmse, _ = evaluate(args=args, net=net, dataset=dataset, segment='valid')
+            valid_rmse, _, _ = evaluate(args=args, net=net, dataset=dataset, segment='valid')
             valid_loss_logger.log(iter = iter_idx, rmse = valid_rmse)
             logging_str += ',\tVal RMSE={:.4f}'.format(valid_rmse)
 
@@ -181,7 +182,7 @@ def train(args, dataset):
                 best_valid_rmse = valid_rmse
                 no_better_valid = 0
                 best_iter = iter_idx
-                test_rmse, test_pred = evaluate(args=args, net=net, dataset=dataset, segment='test')
+                test_rmse, test_pred, test_real = evaluate(args=args, net=net, dataset=dataset, segment='test')
                 
                 # GPU사용할 때, 예외처리
                 if args.device==0:
@@ -190,6 +191,7 @@ def train(args, dataset):
                     best_pred_result['test_pred'] = test_pred
                     
                 best_test_rmse = test_rmse
+#                 best_test_mae = test_mae
                 test_loss_logger.log(iter=iter_idx, rmse=test_rmse)
                 logging_str += ', Test RMSE={:.4f}'.format(test_rmse)
 
@@ -221,7 +223,7 @@ def train(args, dataset):
     valid_loss_logger.close()
     test_loss_logger.close()
     
-    return best_test_rmse
+    return best_test_rmse, test_result_df, test_real
 
 
 def config():
