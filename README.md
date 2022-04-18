@@ -23,7 +23,7 @@ Training set for BERT
 
 ## How to run
 
-- explicit_train_rotten.ipynb
+- grid_search_final.ipynb
 
 
 ## Results
