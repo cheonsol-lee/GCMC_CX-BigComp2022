@@ -30,4 +30,4 @@ Training set for BERT
 
 |Dataset|Our code <br> best of epochs|
 |:-:|:-:|
-|Rotten Tomatoes|0.8004|
+|Rotten Tomatoes|0.8070|
