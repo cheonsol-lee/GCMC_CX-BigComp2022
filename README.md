@@ -1,5 +1,5 @@
 # Multi-relational Stacking Ensemble Recommender System using Cinematic Experience										
-	Last modified in 2021.10.20
+
 - (2021.10.15) Cheonsol Lee submitted short paper in [IEEE BigComp2022](http://www.bigcomputing.org/), [Code](https://github.com/cheonsol-lee/bigcomp_2022_multi_graph)
 - Reference code: [https://github.com/zhoujf620/Motif-based-inductive-GNN-training](https://github.com/zhoujf620/Motif-based-inductive-GNN-training)
 - Author's Paper link: [https://arxiv.org/pdf/1706.02263v2.pdf](https://arxiv.org/pdf/1706.02263v2.pdf)
