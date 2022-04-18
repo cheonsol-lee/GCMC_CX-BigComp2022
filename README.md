@@ -3,7 +3,7 @@
 - Cheonsol Lee submitted short paper in [https://ieeexplore.ieee.org/abstract/document/9736528](https://ieeexplore.ieee.org/abstract/document/9736528), [Code](https://github.com/cheonsol-lee/bigcomp_2022_multi_graph)
 - Reference code: [https://github.com/zhoujf620/Motif-based-inductive-GNN-training](https://github.com/zhoujf620/Motif-based-inductive-GNN-training)
 - Author's Paper link: [https://arxiv.org/pdf/1706.02263v2.pdf](https://arxiv.org/pdf/1706.02263v2.pdf)
-- Reference code: [https://github.com/zhoujf620/Motif-based-inductive-GNN-training](https://github.com/zhoujf620/Motif-based-inductive-GNN-training)
+- Reference code: [https://github.com/tobiasweede/rs-via-gnn/tree/main/02_gcmc/movielens](https://github.com/tobiasweede/rs-via-gnn/tree/main/02_gcmc/movielens)
 
 
 ## Dependencies
